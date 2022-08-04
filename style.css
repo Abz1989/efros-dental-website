@@ -167,6 +167,7 @@ header::before {
     color: white;
     margin-right: 15px;
     letter-spacing: 2px;
+    padding: 20px 0px;
     text-transform: uppercase;
 }
 
@@ -176,7 +177,20 @@ ul li i{
 
 .dropdown {
     display: none;
-    background-color: pink;
+}
+
+.dropdown li {
+    background: var(--primary-blue);
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.dropdown li:hover {
+    background-color: var(--secondary-blue); 
+}
+
+.dropdown a {
+    margin-left: 20px;
 }
 
 .dropdown::before {
@@ -191,10 +205,10 @@ ul li i{
 
 .dropdown::after {
     content: "";
-    height: 100%;
-    width: 20px;
+    height: 20px;
+    width: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     background: var(--primary-purple);
 }
@@ -206,9 +220,15 @@ ul li i{
     flex-direction: column;
     top: 0;
     margin-top: 40px;
-    padding: 22px 40px;
-    line-height: 3;
-    background: var(--primary-blue);
-    border-bottom: 20px solid var(--primary-purple);
-    transition-delay: 2s;
+    padding: 20px 0px 20px 0px;
+    line-height: 3.8;
+    border-left: 20px solid var(--primary-purple);
 }
+
+/* .navbar-menu ul li .dropdown li a{
+    background: blue;
+    width: 100%;
+    border: 1px solid black;
+}
+
+*/
