@@ -5,6 +5,8 @@
     --secondary-blue: #13D1FD;
     --primary-purple: #984FAD;
     --secondary-purple: #C054DE;
+    --overlay-1: hsl(254, 100%, 17%);
+    --overlay-2: hsl(284, 100%, 19%);
 }
 
 html {
@@ -128,9 +130,18 @@ a {
 #nav-main-hero {
     width: 100%;
     background-image: url("../images/Hudson-Valley-Bridge.png");
-    height: 88vh;
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(135deg, var(--overlay-1), var(--overlay-2));
+    opacity: 0.9;
+    position: absolute;
+    z-index: -1;
 }
 
 header {
@@ -140,10 +151,20 @@ header {
 
 header::before {
     content: "";
-    height: 96vh;
+    height: 98vh;
     width: 50px;
     position: absolute;
     top: 0;
+    left: 0;
+    background: var(--primary-blue);
+}
+
+header::after {
+    content: "";
+    height: 30px;
+    width: 31%;
+    position: absolute;
+    bottom: 0;
     left: 0;
     background: var(--primary-blue);
 }
@@ -232,3 +253,107 @@ ul li i{
 }
 
 */
+
+/* ======================================================== Hero Section ======================================================= */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -604px;
+}
+
+.main-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 100px;
+}
+
+.family img{
+    width: 100%;
+    /* background-image: url("images/Efros-Family.png"); */
+    background-repeat: no-repeat;
+    object-fit: contain;
+
+}
+
+.heading-1 {
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 80%;
+}
+
+.payments {
+    font-size: 25px;
+    color: var(--primary-blue);
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 3.5;
+}
+
+.main-content-buttons {
+    margin-top: 16px;
+}
+
+.h-button {
+    position: relative;
+    padding: 20px 40px;
+    background: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    margin-right: 14px;
+    color: white;
+}
+
+.free-consult {
+    border-top: 8px solid var(--secondary-purple);
+    border-left: 8px solid var(--secondary-purple);
+    background: var(--primary-purple);
+}
+
+.free-consult::after {
+    content: "";
+    height: 8px;
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--secondary-purple);
+}
+
+.free-consult:hover {
+    background: var(--secondary-purple);
+}
+
+.what-we-do {
+    border-top: 8px solid var(--secondary-blue);
+    border-left: 8px solid var(--secondary-blue);
+    background: var(--primary-blue);
+}
+
+.what-we-do::after {
+    content: "";
+    height: 8px;
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--secondary-blue);
+}
+
+.what-we-do:hover {
+    background: var(--secondary-blue);
+}
+
+.main-content img {
+    margin-top: 20px;
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
