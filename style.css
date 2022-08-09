@@ -161,7 +161,7 @@ header::before {
 
 header::after {
     content: "";
-    height: 30px;
+    height: 50px;
     width: 31%;
     position: absolute;
     bottom: 0;
@@ -357,3 +357,10 @@ ul li i{
     height: auto;
     object-fit: contain;
 }
+
+/* =============================================== Simple and Affordable ========================================= */
+
+.simple-affordable p {
+    text-align: center;
+}
+
