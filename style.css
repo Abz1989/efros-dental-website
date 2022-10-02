@@ -289,7 +289,7 @@ ul li i{
 
 .payments {
     font-size: 25px;
-    color: var(--primary-blue);
+    color: var(--secondary-blue);
     font-weight: 700;
     text-transform: capitalize;
     line-height: 3.5;
@@ -360,7 +360,8 @@ ul li i{
 
 /* =============================================== Simple and Affordable ========================================= */
 
-.simple-affordable p {
+.simple-affordable {
     text-align: center;
+    margin-top: 100px;
 }
 
