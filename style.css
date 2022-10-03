@@ -383,11 +383,26 @@ ul li i{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .content-2-1 {
     width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-2-1 p {
+    width: 80%;
+    text-align: unset;
+    font-size: 18px;
+    margin-left: 135px;
+    line-height: 30px;
+}
+
+.content-2-1 img {
+    margin-left: 50px;
 }
 
 .content-2-2 {
