@@ -101,7 +101,7 @@ a {
     width: 10%;
     color: white;
     font-weight: 900;
-    padding: 10px 30px 22px 30px;
+    padding: 10px 30px 22.5px 30px;
     text-transform: uppercase;
     background: var(--primary-purple);
     border-top: 10px solid var(--secondary-purple);
@@ -430,6 +430,8 @@ ul li i{
     background: var(--secondary-blue);
 }
 
+/* ================ Simple and Affordable Conetent-2 ============== */
+
 .content-2-1 img {
     margin-left: 70px;
     margin-top: 50px;
@@ -437,5 +439,27 @@ ul li i{
 
 .content-2-2 {
     width: 50%;
+    position: relative;
+}
+
+.content-2-2::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    width: 15px;
+    height: 550px;
+    background: var(--secondary-blue);
+}
+
+.meet-the-doctor {
+    margin-top: 100px;
+    border-top: 1px solid grey;
+    width: 50%;
+    padding: 30px;
+}
+
+.meet-the-doctor h3 {
+    margin-top: -60px;
+    margin-left: 60px;
 }
 
