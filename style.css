@@ -442,7 +442,6 @@ ul li i{
 .content-2-2 {
     width: 50%;
     position: relative;
-    background: red;
 }
 
 .content-2-2::before {
@@ -450,7 +449,7 @@ ul li i{
     position: absolute;
     top: 100px;
     width: 15px;
-    height: 550px;
+    height: 743px;
     background: var(--secondary-blue);
 }
 
@@ -461,14 +460,10 @@ ul li i{
     border-bottom: 1px solid rgb(194, 186, 186);
     width: 70%;
     padding: 40px;
-    background: black;
 }
 
-.meet-the-doctor img{
-    
-}
 
-.meet-the-doctor h4 {
+.content-2-2-h4{
     margin-top: -70px;
     margin-left: 70px;
     font-size: 20px;
@@ -479,7 +474,7 @@ ul li i{
     text-transform: uppercase;
 }
 
-.meet-the-doctor p {
+.content-2-2-p {
     font-weight: 500;
     font-size: 18px;
     color: #063654;
@@ -490,35 +485,19 @@ ul li i{
     margin-top: 10px;
 }
 
-.meet-the-team {
+.meet-the-team, .sets-us, .faq {
     width: 70%;
     padding: 40px;
-    background: black;
+    border-right: 1px solid rgb(194, 186, 186);
+    border-bottom: 1px solid rgb(194, 186, 186);
 }
 
 .meet-the-team img{
     margin-left: -10px;
 }
 
-.meet-the-team h4{
-    margin-top: -70px;
-    margin-left: 70px;
-    font-size: 20px;
-    color: var(--primary-blue);
-    font-weight: 700;
-    word-spacing: 4px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+.meet-the-team {
+    border-bottom: 1px solid #bb6bd9;
 }
 
-.meet-the-team p{
-    font-weight: 500;
-    font-size: 18px;
-    color: #063654;
-    font-style: normal;
-    width: 80%;
-    margin-left: 70px;
-    line-height: 30px;
-    margin-top: 10px;
-}
 
